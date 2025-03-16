@@ -1,5 +1,5 @@
 {
-    "name": "wintech/laroute",
+    "name": "chamnab/laroute",
     "description": "Access Laravels URL/Route helper functions, from JavaScript.",
     "keywords": [
         "laravel",
