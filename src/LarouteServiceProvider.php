@@ -1,10 +1,10 @@
 <?php
 
-namespace Te7aHoudini\Laroute;
+namespace Chamnab\Laroute;
 
 use Illuminate\Support\ServiceProvider;
-use Te7aHoudini\Laroute\Console\Commands\LarouteGeneratorCommand;
-use Te7aHoudini\Laroute\Routes\Collection as Routes;
+use Chamnab\Laroute\Console\Commands\LarouteGeneratorCommand;
+use Chamnab\Laroute\Routes\Collection as Routes;
 
 class LarouteServiceProvider extends ServiceProvider
 {
@@ -54,8 +54,8 @@ class LarouteServiceProvider extends ServiceProvider
     protected function registerGenerator()
     {
         $this->app->bind(
-            'Te7aHoudini\Laroute\Generators\GeneratorInterface',
-            'Te7aHoudini\Laroute\Generators\TemplateGenerator'
+            'Chamnab\Laroute\Generators\GeneratorInterface',
+            'Chamnab\Laroute\Generators\TemplateGenerator'
         );
     }
 
@@ -67,8 +67,8 @@ class LarouteServiceProvider extends ServiceProvider
     protected function registerCompiler()
     {
         $this->app->bind(
-            'Te7aHoudini\Laroute\Compilers\CompilerInterface',
-            'Te7aHoudini\Laroute\Compilers\TemplateCompiler'
+            'Chamnab\Laroute\Compilers\CompilerInterface',
+            'Chamnab\Laroute\Compilers\TemplateCompiler'
         );
     }
 
@@ -84,7 +84,7 @@ class LarouteServiceProvider extends ServiceProvider
             function ($app) {
                 $config = $app['config'];
                 $routes = new Routes($app['router']->getRoutes(), $config->get('laroute.filter', 'all'), $config->get('laroute.action_namespace', ''));
-                $generator = $app->make('Te7aHoudini\Laroute\Generators\GeneratorInterface');
+                $generator = $app->make('Chamnab\Laroute\Generators\GeneratorInterface');
 
                 return new LarouteGeneratorCommand($config, $routes, $generator);
             }

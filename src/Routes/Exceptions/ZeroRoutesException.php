@@ -1,6 +1,6 @@
 <?php
 
-namespace Te7aHoudini\Laroute\Routes\Exceptions;
+namespace Chamnab\Laroute\Routes\Exceptions;
 
 class ZeroRoutesException extends \Exception
 {

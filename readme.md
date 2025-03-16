@@ -31,10 +31,10 @@ composer require chamnab/laroute
 Copy the packages config files.
 
 ```
-php artisan vendor:publish --provider='Te7aHoudini\Laroute\LarouteServiceProvider'
+php artisan vendor:publish --provider='Chamnab\Laroute\LarouteServiceProvider'
 ```
 
-###### app/config/packages/Te7aHoudini/laroute/config.php
+###### app/config/packages/Chamnab/laroute/config.php
 
 ```php
 
@@ -236,4 +236,4 @@ Route::group(['laroute' => false], function () {
 
 ## Licence
 
-[View the licence in this repo.](https://github.com/Te7aHoudini/laroute/blob/master/LICENSE)
+[View the licence in this repo.](https://github.com/Chamnab/laroute/blob/master/LICENSE)

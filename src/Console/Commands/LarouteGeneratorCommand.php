@@ -1,12 +1,12 @@
 <?php
 
-namespace Te7aHoudini\Laroute\Console\Commands;
+namespace Chamnab\Laroute\Console\Commands;
 
 use Illuminate\Config\Repository as Config;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
-use Te7aHoudini\Laroute\Generators\GeneratorInterface as Generator;
-use Te7aHoudini\Laroute\Routes\Collection as Routes;
+use Chamnab\Laroute\Generators\GeneratorInterface as Generator;
+use Chamnab\Laroute\Routes\Collection as Routes;
 
 class LarouteGeneratorCommand extends Command
 {
@@ -34,14 +34,14 @@ class LarouteGeneratorCommand extends Command
     /**
      * An array of all the registered routes.
      *
-     * @var \Te7aHoudini\Laroute\Routes\Collection
+     * @var \Chamnab\Laroute\Routes\Collection
      */
     protected $routes;
 
     /**
      * The generator instance.
      *
-     * @var \Te7aHoudini\Laroute\Generators\GeneratorInterface
+     * @var \Chamnab\Laroute\Generators\GeneratorInterface
      */
     protected $generator;
 

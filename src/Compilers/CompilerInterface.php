@@ -1,6 +1,6 @@
 <?php
 
-namespace Te7aHoudini\Laroute\Compilers;
+namespace Chamnab\Laroute\Compilers;
 
 interface CompilerInterface
 {
