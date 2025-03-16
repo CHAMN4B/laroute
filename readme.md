@@ -1,3 +1,5 @@
+**This package is continuous development of [aaronlord/laroute](https://github.com/aaronlord/laroute)**.
+
 # Laroute
 
 [Laravel](http://laravel.com/) has some pretty sweet [helper functions](http://laravel.com/docs/helpers#urls) for generating urls/links and its auto-json-magic makes it building APIs super easy. It's my go-to choice for building single-page js apps, but routing can quickly become a bit of a pain.
@@ -8,31 +10,20 @@ This package allows us to port our routes over to JavaScript, and gives us a bun
 
 ![Laroute in action](laroute.png)
 
+<p align="center">
+<a href="https://github.com/Chamnab/laroute/releases"><img src="https://img.shields.io/github/release/Chamnab/laroute.svg?style=flat-square" alt="Releases"></a>
+<a href="https://travis-ci.org/Chamnab/laroute"><img src="https://img.shields.io/travis/Chamnab/laroute/master.svg?style=flat-square" alt="Build Status"></a>
+<a href="https://styleci.io/repos/214170700"><img src="https://styleci.io/repos/214170700/shield" alt="StyleCI"></a>
+<a href="https://scrutinizer-ci.com/g/Chamnab/laroute/?branch=master"><img src="https://img.shields.io/scrutinizer/g/Chamnab/laroute.svg?style=flat-square" alt="Code Quality"></a>
+<a href="https://github.com/Chamnab/laroute/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Chamnab/laroute.svg?style=flat-square" alt="License"></a>
+<a href="https://packagist.org/packages/chamnab/laroute"><img src="https://img.shields.io/packagist/dt/Chamnab/laroute.svg?style=flat-square" alt="Downloads"></a>
+
 ## Installation
 
 Install the usual [composer](https://getcomposer.org/) way.
 
-###### composer.json
-```json
-{
-	"require" : {
-		"chamnab/laroute" : "2.*"
-	}
-}
-```
-
-n.b Laravel 4.x users, check out [version 1.3.2](https://github.com/aaronchamnab/laroute/tree/v1.3.2)
-
-###### app/config/app.php
-```php
-	...
-	
-	'providers' => array(
-		...
-		Chamnab\Laroute\LarouteServiceProvider::class,
-	],
-	
-	...
+```bash
+composer require chamnab/laroute
 ```
 
 ### Configure (optional)
@@ -40,10 +31,10 @@ n.b Laravel 4.x users, check out [version 1.3.2](https://github.com/aaronchamnab
 Copy the packages config files.
 
 ```
-php artisan vendor:publish --provider='Chamnab\Laroute\LarouteServiceProvider'
+php artisan vendor:publish --provider='Te7aHoudini\Laroute\LarouteServiceProvider'
 ```
 
-###### app/config/packages/chamnab/laroute/config.php
+###### app/config/packages/Te7aHoudini/laroute/config.php
 
 ```php
 
@@ -245,4 +236,4 @@ Route::group(['laroute' => false], function () {
 
 ## Licence
 
-[View the licence in this repo.](https://github.com/aaronchamnab/laroute/blob/master/LICENSE)
+[View the licence in this repo.](https://github.com/Te7aHoudini/laroute/blob/master/LICENSE)

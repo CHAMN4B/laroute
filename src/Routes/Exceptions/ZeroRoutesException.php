@@ -1,5 +1,7 @@
 <?php
 
-namespace Chamnab\Laroute\Routes\Exceptions;
+namespace Te7aHoudini\Laroute\Routes\Exceptions;
 
-class ZeroRoutesException extends \Exception { }
+class ZeroRoutesException extends \Exception
+{
+}

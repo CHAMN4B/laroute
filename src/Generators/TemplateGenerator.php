@@ -1,16 +1,16 @@
 <?php
 
-namespace Chamnab\Laroute\Generators;
+namespace Te7aHoudini\Laroute\Generators;
 
 use Illuminate\Filesystem\Filesystem;
-use Chamnab\Laroute\Compilers\CompilerInterface as Compiler;
+use Te7aHoudini\Laroute\Compilers\CompilerInterface as Compiler;
 
 class TemplateGenerator implements GeneratorInterface
 {
     /**
      * The compiler instance.
      *
-     * @var \Chamnab\Laroute\Compilers\CompilerInterface
+     * @var \Te7aHoudini\Laroute\Compilers\CompilerInterface
      */
     protected $compiler;
 
@@ -24,13 +24,12 @@ class TemplateGenerator implements GeneratorInterface
     /**
      * Create a new template generator instance.
      *
-     * @param $compiler   \Chamnab\Laroute\Compilers\CompilerInterface
+     * @param $compiler   \Te7aHoudini\Laroute\Compilers\CompilerInterface
      * @param $filesystem \Illuminate\Filesystem\Filesystem
-     *
      */
     public function __construct(Compiler $compiler, Filesystem $filesystem)
     {
-        $this->compiler   = $compiler;
+        $this->compiler = $compiler;
 
         $this->filesystem = $filesystem;
     }
@@ -44,7 +43,7 @@ class TemplateGenerator implements GeneratorInterface
      *
      * @return string
      */
-    public function compile($templatePath, Array $templateData, $filePath)
+    public function compile($templatePath, array $templateData, $filePath)
     {
         $template = $this->filesystem->get($templatePath);
 
@@ -59,7 +58,7 @@ class TemplateGenerator implements GeneratorInterface
 
     public function makeDirectory($directory)
     {
-        if ( ! $this->filesystem->isDirectory($directory)) {
+        if (! $this->filesystem->isDirectory($directory)) {
             $this->filesystem->makeDirectory($directory, 0777, true);
         }
     }

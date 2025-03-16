@@ -67,6 +67,7 @@ class Collection extends \Illuminate\Support\Collection
         $uri     = $route->uri();
         $name    = $route->getName();
         $action  = $route->getActionName();
+        $action = addslashes($action);
         $laroute = Arr::get($route->getAction(), 'laroute', null);
 
         if(!empty($namespace)) {
