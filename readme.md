@@ -16,12 +16,12 @@ Install the usual [composer](https://getcomposer.org/) way.
 ```json
 {
 	"require" : {
-		"lord/laroute" : "2.*"
+		"chamnab/laroute" : "2.*"
 	}
 }
 ```
 
-n.b Laravel 4.x users, check out [version 1.3.2](https://github.com/aaronlord/laroute/tree/v1.3.2)
+n.b Laravel 4.x users, check out [version 1.3.2](https://github.com/aaronchamnab/laroute/tree/v1.3.2)
 
 ###### app/config/app.php
 ```php
@@ -29,7 +29,7 @@ n.b Laravel 4.x users, check out [version 1.3.2](https://github.com/aaronlord/la
 	
 	'providers' => array(
 		...
-		Lord\Laroute\LarouteServiceProvider::class,
+		Chamnab\Laroute\LarouteServiceProvider::class,
 	],
 	
 	...
@@ -40,10 +40,10 @@ n.b Laravel 4.x users, check out [version 1.3.2](https://github.com/aaronlord/la
 Copy the packages config files.
 
 ```
-php artisan vendor:publish --provider='Lord\Laroute\LarouteServiceProvider'
+php artisan vendor:publish --provider='Chamnab\Laroute\LarouteServiceProvider'
 ```
 
-###### app/config/packages/lord/laroute/config.php
+###### app/config/packages/chamnab/laroute/config.php
 
 ```php
 
@@ -94,7 +94,7 @@ return [
      * the ported helper Laravel url/route functions and the route data to go
      * with them.
      */
-    'template' => 'vendor/lord/laroute/src/templates/laroute.js',
+    'template' => 'vendor/chamnab/laroute/src/templates/laroute.js',
     
     /*
      * Appends a prefix to URLs. By default the prefix is an empty string.
@@ -245,4 +245,4 @@ Route::group(['laroute' => false], function () {
 
 ## Licence
 
-[View the licence in this repo.](https://github.com/aaronlord/laroute/blob/master/LICENSE)
+[View the licence in this repo.](https://github.com/aaronchamnab/laroute/blob/master/LICENSE)

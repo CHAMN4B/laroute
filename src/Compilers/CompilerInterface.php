@@ -1,6 +1,6 @@
 <?php
 
-namespace Lord\Laroute\Compilers;
+namespace Chamnab\Laroute\Compilers;
 
 interface CompilerInterface
 {

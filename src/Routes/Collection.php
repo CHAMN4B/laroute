@@ -1,11 +1,11 @@
 <?php
 
-namespace Lord\Laroute\Routes;
+namespace Chamnab\Laroute\Routes;
 
 use Illuminate\Routing\Route;
 use Illuminate\Routing\RouteCollectionInterface;
 use Illuminate\Support\Arr;
-use Lord\Laroute\Routes\Exceptions\ZeroRoutesException;
+use Chamnab\Laroute\Routes\Exceptions\ZeroRoutesException;
 
 class Collection extends \Illuminate\Support\Collection
 {
